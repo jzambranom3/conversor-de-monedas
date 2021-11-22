@@ -1,0 +1,24 @@
+def convertir(valor_dolar):
+    dolares = round(pesos / valor_dolar, 2)
+    print("\nTienes $" + str(dolares) + " dólares")
+
+menu = """
+    Bienvenido al conversor de moneda
+
+    1 - Pesos Colombiano
+    2 - Pesos Argentinos
+    3 - Pesos Mexicanos
+
+    Eliga la opcion: """
+opciones = input(menu)
+if opciones == '1':
+    pesos = float(input("\nIngrese el valor en pesos (Colombiano): "))
+    convertir(3875)
+elif opciones == '2':
+    pesos = float(input("\nIngrese el valor en pesos (Argentino): "))
+    convertir(65)
+elif opciones == '3':
+    pesos = float(input("\nIngrese el valor en pesos (Mexicano): "))
+    convertir(24)
+else:
+    print("\nIngrese una opción válida")
